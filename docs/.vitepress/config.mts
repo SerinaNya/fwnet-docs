@@ -14,7 +14,7 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: true,
   sitemap: {
-    hostname: 'https://fw.ac.cn'
+    hostname: 'https://fw.ac.cn',
   },
 
   themeConfig: {
@@ -38,6 +38,12 @@ export default defineConfig({
     ],
 
     externalLinkIcon: true,
+    
+    returnToTopLabel: '回到顶部',
+    sidebarMenuLabel: '目录',
+    darkModeSwitchLabel: '主题',
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式',
     lastUpdatedText: '最后更新于',
     outline: {
       label: '在此页面上',
