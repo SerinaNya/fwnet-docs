@@ -1,0 +1,22 @@
+:root {
+    --vp-home-hero-image-background-image: linear-gradient(
+        to right,
+        rgb(224 231 255 /1) 0%,
+        rgb(224 242 254 /1) 50%,
+        rgb(207 250 254 /1) 100%
+    );
+    --vp-home-hero-image-filter: blur(68px);
+}
+
+.image-bg {
+    animation: breathe 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes breathe {
+  0% {
+    opacity: .8;
+  }
+  100% {
+    opacity: 1.2;
+  }
+}
