@@ -1,4 +1,9 @@
 ---
+head:
+  - - link
+    - rel: preconnect
+      href: https://cravatar.com
+
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
@@ -71,7 +76,7 @@ const members = [
     ]
   },  
   {
-    avatar: 'https://avatars.githubusercontent.com/u/31172177',
+    avatar: 'https://msxzt.cn/_nuxt/img/nagisa.eace80a.jpg',
     name: '暮光小猿wzt',
     title: '参与者',
     links: [
