@@ -12,6 +12,7 @@ export default defineConfig({
   ],
 
   cleanUrls: true,
+  lastUpdated: true,
   sitemap: {
     hostname: 'https://fw.ac.cn'
   },
