@@ -24,11 +24,21 @@ export default defineConfig({
     sidebar: [
       {
         text: '简介',
-        collapsed: true,
+        collapsed: false,
         items: [
           { text: '什么是 fwnet？', link: '/what-is-fwnet' },
           { text: '快速开始', link: '/getting-started' },
           { text: '其他项目', link: '/other-projects' },
+        ],
+      },
+      {
+        text: '特性',
+        collapsed: false,
+        items: [
+          { text: '分配', link: '/allocation' },
+          { text: 'RPKI', link: '/rpki' },
+          { text: 'CA', link: '/ca' },
+          { text: 'IX', link: '/ix' },
         ],
       },
     ],
@@ -38,7 +48,7 @@ export default defineConfig({
     ],
 
     externalLinkIcon: true,
-    
+
     returnToTopLabel: '回到顶部',
     sidebarMenuLabel: '目录',
     darkModeSwitchLabel: '主题',
@@ -68,6 +78,13 @@ export default defineConfig({
         Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" style="text-decoration: none">CC BY-NC-SA 4.0</a>
         </small>
       `,
+    },
+  },
+
+  markdown: {
+    theme: {
+      light: 'one-light',
+      dark: 'one-dark-pro',
     },
   },
 
