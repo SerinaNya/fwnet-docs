@@ -25,7 +25,7 @@ fwnet 目前只有一个公开的 RPKI 服务器，地址为 `rpki.fw.ac.cn:8237
 
 以下是 BIRD2 的配置方法：
 
-```plain:line-numbers
+```bird2:line-numbers
 roa4 table roa4_fwnet;
 roa6 table roa6_fwnet;
 
