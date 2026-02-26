@@ -19,6 +19,8 @@ fetch('https://rpki0.fw.ac.cn/rpki.json').then(res => res.json()).then(data => {
 
 在 fwnet 中，RPKI 可以被用于验证网络路由，以确保网络的可靠性和安全性。
 
+一些来自其他网络的 RPKI 数据也会被合并至 fwnet 的 RPKI 数据中。
+
 ## 服务器
 
 fwnet 目前只有一个公开的 RPKI 服务器，地址为 `rpki0.fw.ac.cn:8237`。
