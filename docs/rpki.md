@@ -21,7 +21,7 @@ fetch('https://rpki0.fw.ac.cn/rpki.json').then(res => res.json()).then(data => {
 
 ## 服务器
 
-fwnet 目前只有一个公开的 RPKI 服务器，地址为 `rpki.fw.ac.cn:8237`。
+fwnet 目前只有一个公开的 RPKI 服务器，地址为 `rpki0.fw.ac.cn:8237`。
 
 以下是 BIRD2 的配置方法：
 
@@ -32,7 +32,7 @@ roa6 table roa6_fwnet;
 protocol rpki rpki_fwnet {
     roa4 { table roa4_fwnet; };
     roa6 { table roa6_fwnet; };
-    remote "rpki.fw.ac.cn" port 8237;
+    remote "rpki0.fw.ac.cn" port 8237;
     refresh 30;
     retry 5;
     expire 600;
